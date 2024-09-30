@@ -1,0 +1,35 @@
+#login {
+  overflow: hidden;
+  position: relative;
+  .form_label {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    box-shadow: none;
+
+    &:focus {
+      border: 1px solid #000;
+      opacity: 0.7;
+    }
+  }
+
+  .setting_icon {
+    position: absolute;
+    right: 0;
+    top: 30%;
+  }
+
+  //   animation
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .setting_icon .bg_primary {
+    animation: spin 2s linear infinite; /* Spins the icon continuously */
+  }
+}
