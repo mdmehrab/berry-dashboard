@@ -1,5 +1,6 @@
 import { FaEyeSlash } from "react-icons/fa6";
 import { IoMdSettings } from "react-icons/io";
+import { FaEye } from "react-icons/fa";
 import { useState } from "react";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import logo from "../../assets/svg/logo.svg";
@@ -7,6 +8,7 @@ import "./login.scss";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [showIcon, setShowIcon] = useState();
 
   const handelPassword = () => {
     setShowPassword(!showPassword);
@@ -15,8 +17,8 @@ const Login = () => {
   return (
     <section id="login">
       <div className="absolute setting_icon">
-        <div className="bg_primary rounded-full p-3">
-          <IoMdSettings />
+        <div className="curve-button">
+          <IoMdSettings className="icon bg_primary" />
         </div>
       </div>
 
@@ -47,8 +49,8 @@ const Login = () => {
             <InputGroup>
               <Form.Control type={showPassword ? "password" : "text"} />
               <InputGroup.Text>
-                <button onClick={handelPassword}>
-                  <FaEyeSlash />
+                <button onClick={handelPassword} className="border-0">
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </button>
               </InputGroup.Text>
             </InputGroup>
