@@ -5,10 +5,14 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "./global.scss";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+// router
+import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </StrictMode>
 );

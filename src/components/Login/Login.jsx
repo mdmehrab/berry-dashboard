@@ -2,13 +2,13 @@ import { FaEyeSlash } from "react-icons/fa6";
 import { IoMdSettings } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
 import { useState } from "react";
-import { Form, InputGroup, Button } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../../assets/svg/logo.svg";
 import "./login.scss";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [showIcon, setShowIcon] = useState();
 
   const handelPassword = () => {
     setShowPassword(!showPassword);
@@ -73,9 +73,11 @@ const Login = () => {
           </button>
 
           <div className="d-flex justify-content-center align-items-center mb-3">
-            <span className="form_label text-secondary cursor_pointer hover">
-              Don't have an account?
-            </span>
+            <Link to="/register">
+              <span className="form_label text-secondary cursor_pointer hover">
+                Don't have an account?
+              </span>
+            </Link>
           </div>
         </div>
       </div>
