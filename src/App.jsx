@@ -1,9 +1,9 @@
-import LogIn from "./components/Login/LogIn";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./route";
 
-export default function App() {
-  return (
-    <>
-      <LogIn />
-    </>
-  );
-}
+const App = () => {
+  const router = useRoutes(routes);
+
+  return <>{router}</>;
+};
+export default App;
