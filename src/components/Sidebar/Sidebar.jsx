@@ -1,4 +1,6 @@
 import "./sidebar.scss";
+import { Link, NavLink } from "react-router-dom";
+import { navLinks } from "../../data/data";
 
 function Sidebar() {
   return (
@@ -9,7 +11,21 @@ function Sidebar() {
         height: "100vh",
       }}
     >
-      Sidebar
+      <ul>
+        {navLinks.map((ele) => {
+          console.log(ele);
+          return (
+            <>
+              <div>{ele.content}</div>
+              {ele.items.map((cat) => (
+                <li key={cat.id}>
+                  <Link to={cat.url}>{cat.label}</Link>
+                </li>
+              ))}
+            </>
+          );
+        })}
+      </ul>
     </div>
   );
 }

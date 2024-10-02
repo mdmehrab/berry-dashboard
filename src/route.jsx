@@ -9,6 +9,29 @@ export const routes = [
   {
     path: "/dashboard",
     element: <Layout />,
-    children: [{ path: "", element: <Dashboard /> }],
+    children: [
+      { path: "", element: <Dashboard /> },
+      { path: "default", element: <div>hey</div> },
+      {
+        path: "analytics",
+        element: <div>analytics</div>,
+      },
+      {
+        path: "a",
+        element: <div>aaaaaaaaaaaaaaaaa</div>,
+      },
+      {
+        path: "b",
+        element: <div>bbbbbbbbbbbbbbbbbbb</div>,
+      },
+      {
+        path: "c",
+        element: <div>cccccccccccccccccc</div>,
+      },
+      {
+        path: "d",
+        element: <div>ddddddddddddddddddd</div>,
+      },
+    ],
   },
 ];
