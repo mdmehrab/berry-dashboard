@@ -1,11 +1,12 @@
 import { FaEyeSlash } from "react-icons/fa6";
-import { IoMdSettings } from "react-icons/io";
+
 import { FaEye } from "react-icons/fa";
 import { useState } from "react";
 import { Form, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/svg/logo.svg";
 import "./login.scss";
+import Settings from "../Settings/Settings";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,11 +17,7 @@ const Login = () => {
 
   return (
     <section id="login">
-      <div className="absolute setting_icon">
-        <div className="curve-button">
-          <IoMdSettings className="icon bg_primary" />
-        </div>
-      </div>
+      <Settings />
 
       <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
         <div className="bg-white p-5 rounded shadow-sm w_35">
