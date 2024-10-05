@@ -10,7 +10,7 @@ const Layout = () => {
       <div className="d-flex">
         <Sidebar />
 
-        <div className="content-area p-5 bg-secondary" style={{ flex: 1 }}>
+        <div>
           <Outlet />
         </div>
       </div>
