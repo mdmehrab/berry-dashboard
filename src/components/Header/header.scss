@@ -1,8 +1,56 @@
-.Logo-section {
-  background-color: red;
-  width: 14rem;
+.profile {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
 }
-.desten {
-  text-align: right;
+
+.header-colour {
+  background-color: #ffffff;
+}
+
+.search-input {
+  width: 27rem;
   background-color: aqua;
+}
+
+.search-icon {
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.adjustments-icon {
+  right: 23rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  cursor: pointer;
+  background-color: rgb(232, 246, 245);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.icone-background {
+  background-color: rgb(232, 246, 245);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-background-one {
+  background-color: rgb(227, 232, 232);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,53 +1,73 @@
 import logo from "../../assets/svg/logo.svg";
-import { FaBars } from "react-icons/fa";
-import { Form } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import profile from "../../assets/images/berry.jpg";
+import { IoLanguageSharp } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
-import { BsArrowsFullscreen } from "react-icons/bs";
 import { TbAccessPoint } from "react-icons/tb";
-import { IoLanguage } from "react-icons/io5";
-
+import { BsArrowsFullscreen } from "react-icons/bs";
+import { IoSettingsOutline } from "react-icons/io5";
+import { FaBars } from "react-icons/fa6";
+import { CiSearch } from "react-icons/ci";
+import { TbAdjustmentsHorizontal } from "react-icons/tb";
+import { Row, Col, InputGroup } from "react-bootstrap";
 import "./header.scss";
 
 function Header() {
   return (
     <>
-      <section className="d-flex bg-info p-3">
-        <div className="Logo-section d-flex justify-content-between align-items-center">
-          <span>
-            <img src={logo} alt="logo" />
-          </span>
+      <Container fluid className="header-colour p-3 ">
+        <Row>
+          <Col xl={2}>
+            <div className="d-flex align-items-center justify-content-center justify-content-between logo_background">
+              <span>
+                <img src={logo} alt="" />
+              </span>
 
-          <span className="desten">
-            <FaBars />
-          </span>
-        </div>
+              <span className="icone-background ">
+                <FaBars />
+              </span>
+            </div>
+          </Col>
+          <Col className="position-relative " xl={7}>
+            {/* Search input field */}
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              className="search-input"
+            />
 
-        <div>
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-        </div>
+            <CiSearch className="position-absolute search-icon" />
 
-        <div>
-          <span>
-            <IoNotificationsOutline />
-          </span>
-          <span>
-            <BsArrowsFullscreen />
-          </span>
+            <TbAdjustmentsHorizontal className="position-absolute adjustments-icon " />
+          </Col>
 
-          <span>
-            <TbAccessPoint />
-          </span>
+          <Col className="d-flex gap-4" xl={3}>
+            <span className="icone-background">
+              <IoNotificationsOutline />
+            </span>
+            <span className="icone-background-one">
+              <IoLanguageSharp />
+            </span>
+            <span className="icone-background">
+              <TbAccessPoint />
+            </span>
+            <span className="icone-background-one">
+              <BsArrowsFullscreen />
+            </span>
 
-          <span>
-            <IoLanguage />
-          </span>
-        </div>
-      </section>
+            <div className=" d-flex gap-2 icone-background-one">
+              <span>
+                <img className="profile" src={profile} alt="" />
+              </span>
+              <span>
+                <IoSettingsOutline />
+              </span>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Header />
 
       <div className="d-flex">
@@ -14,7 +14,7 @@ const Layout = () => {
           <Outlet />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
