@@ -17,7 +17,7 @@ function Header() {
   return (
     <>
       <Container fluid className="header-colour p-3 ">
-        <Row>
+        <Row className="d-flex align-items-center justify-content-center">
           <Col xl={2}>
             <div className="d-flex align-items-center justify-content-center justify-content-between logo_background">
               <span>
@@ -29,7 +29,7 @@ function Header() {
               </span>
             </div>
           </Col>
-          <Col className="position-relative " xl={7}>
+          <Col className="position-relative  d-flex align-items-center" xl={7}>
             {/* Search input field */}
             <Form.Control
               type="search"
@@ -39,11 +39,15 @@ function Header() {
             />
 
             <CiSearch className="position-absolute search-icon" />
-
-            <TbAdjustmentsHorizontal className="position-absolute adjustments-icon " />
+            <span className="">
+              <TbAdjustmentsHorizontal className="position-absolute adjustments-icon" />
+            </span>
           </Col>
 
-          <Col className="d-flex gap-4" xl={3}>
+          <Col
+            className="d-flex  align-items-center justify-content-center gap-3"
+            xl={3}
+          >
             <span className="icone-background">
               <IoNotificationsOutline />
             </span>
@@ -57,7 +61,7 @@ function Header() {
               <BsArrowsFullscreen />
             </span>
 
-            <div className=" d-flex gap-2 icone-background-one">
+            <div className=" d-flex gap-3 icone-background-two">
               <span>
                 <img className="profile" src={profile} alt="" />
               </span>

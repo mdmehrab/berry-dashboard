@@ -1,6 +1,6 @@
 .profile {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
   border-radius: 50%;
 }
 
@@ -10,27 +10,28 @@
 
 .search-input {
   width: 27rem;
-  background-color: aqua;
+  padding-left: 2rem;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .search-icon {
   left: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #ccc;
+  color: #494444;
 }
 
 .adjustments-icon {
   right: 23rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #ccc;
-  cursor: pointer;
-  background-color: rgb(232, 246, 245);
-  padding: 0.8rem;
-  border-radius: 10px;
 }
 
+.adajest {
+  background-color: rgb(4, 230, 214);
+}
 .position-relative {
   position: relative;
 }
@@ -43,6 +44,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    background-color: #39a9a5;
+    cursor: pointer;
+    color: #fff;
+  }
 }
 
 .icone-background-one {
@@ -53,4 +59,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #173e43;
+  }
+}
+
+.icone-background-two {
+  background-color: rgb(227, 232, 232);
+  width: 90px;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #173e43;
+  }
 }
