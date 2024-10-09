@@ -25,6 +25,14 @@ export const items = [
     pairs: [
       { icon: FaBars, name: "Ueers" },
       { icon: FaBars, name: "Customer" },
+      { icon: FaBars, name: "Chat" },
+      { icon: FaBars, name: "Kanban" },
+      { icon: FaBars, name: "Mail" },
+      { icon: FaBars, name: "Calendar" },
+      { icon: FaBars, name: "Contact" },
+      { icon: FaBars, name: "E-commerce" },
+      { icon: FaBars, name: "Invoice" },
+      { icon: FaBars, name: "CRM" },
     ],
   },
 
@@ -32,8 +40,15 @@ export const items = [
     id: 4,
     title: "Forms",
     pairs: [
-      { icon: FaBars, name: "Defaults" },
-      { icon: FaBars, name: "Analyticsss" },
+      { icon: FaBars, name: "Components" },
+      { icon: FaBars, name: "Plugins" },
+      { icon: FaBars, name: "Layouts" },
+      { icon: FaBars, name: "Table" },
+      { icon: FaBars, name: "Data Grid" },
+      { icon: FaBars, name: "Charts" },
+      { icon: FaBars, name: "gfj" },
+      { icon: FaBars, name: "fjj" },
+      { icon: FaBars, name: "jfdj" },
     ],
   },
 
