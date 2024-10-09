@@ -16,7 +16,7 @@ import "./header.scss";
 function Header() {
   return (
     <>
-      <Container fluid className="header-colour p-3 ">
+      <Container fluid className="header-colour p-3">
         <Row className="d-flex align-items-center justify-content-center">
           <Col xl={2}>
             <div className="d-flex align-items-center justify-content-center justify-content-between logo_background">

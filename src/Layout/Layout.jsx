@@ -9,17 +9,14 @@ const Layout = () => {
       <Header />
       <Container fluid className="h-full">
         <Row>
-          <Col xl={2} className="bg-danger">
+          <Col xl={2}>
             <Sidebar />
           </Col>
 
-          <Col xl={10} className="bg-info">
+          <Col xl={10}>
             <Outlet />
           </Col>
         </Row>
-        <div className="d-flex">
-          <div></div>
-        </div>
       </Container>
     </>
   );

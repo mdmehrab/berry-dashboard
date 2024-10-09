@@ -1,0 +1,38 @@
+#sidebar {
+  overflow: hidden;
+  margin-top: 5rem;
+  padding: 1rem 1rem;
+  background: #fff;
+
+  h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .sidebar-section {
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-item,
+  .sidebar-subitem {
+    // margin: 0.2rem 0;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 0.2rem 0;
+    &:hover {
+      background: rgb(57, 169, 165);
+    }
+  }
+
+  .nested-items {
+    margin-left: 1rem;
+  }
+
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.3rem 0;
+  }
+}
