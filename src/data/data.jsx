@@ -33,9 +33,9 @@ export const sidebarData = [
     id: 2,
     content: "Widget",
     items: [
-      { id: 1, icon: FaArrowRight, label: "st", url: "st" },
+      { id: 1, icon: FaArrowRight, label: "Statistics", url: "st" },
       { id: 2, icon: FaArrowRight, label: "data", url: "data" },
-      { id: 3, icon: FaArrowRight, label: "chat", url: "chat" },
+      { id: 3, icon: FaArrowRight, label: "chart", url: "chat" },
     ],
   },
   {
@@ -46,8 +46,20 @@ export const sidebarData = [
         id: 1,
         content: "User",
         items: [
-          { id: 1, icon: FaArrowRight, label: "User 1", url: "default" },
-          { id: 2, icon: FaArrowRight, label: "User 2", url: "analytics" },
+          {
+            id: 1,
+            icon: FaArrowRight,
+            label: "Social Profile",
+            url: "social-profile",
+          },
+          {
+            id: 2,
+            icon: FaArrowRight,
+            label: "Account Profile",
+            url: "account=profile",
+          },
+          { id: 3, icon: FaArrowRight, label: "Cards", url: "cards" },
+          { id: 4, icon: FaArrowRight, label: "List", url: "list" },
         ],
       },
       { id: 2, icon: FaArrowRight, label: "st", url: "st" },
@@ -55,5 +67,4 @@ export const sidebarData = [
       { id: 4, icon: FaArrowRight, label: "fdsf", url: "st" },
     ],
   },
-  // Repeat similar structure for other "Application" objects
 ];
