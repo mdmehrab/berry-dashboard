@@ -31,11 +31,13 @@ const Sidebar = () => {
                         )}
                         {item.content}
                       </h6>
-
                       {openSection === item.id && (
                         <div className="nested-items">
                           {item.items.map((subItem) => (
-                            <div key={subItem.id} className="sidebar-subitem">
+                            <div
+                              key={subItem.id}
+                              className={`sidebar-subitem ${subItem.space}`}
+                            >
                               <Link to={subItem.url}>
                                 {subItem.icon && (
                                   <subItem.icon
