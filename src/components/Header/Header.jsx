@@ -15,7 +15,7 @@ import "./header.scss";
 
 function Header() {
   return (
-    <>
+    <header>
       <Container fluid className="header-colour p-3">
         <Row className="d-flex align-items-center justify-content-center">
           <Col xl={2}>
@@ -72,7 +72,7 @@ function Header() {
           </Col>
         </Row>
       </Container>
-    </>
+    </header>
   );
 }
 

@@ -13,7 +13,7 @@ const Layout = () => {
             <Sidebar />
           </Col>
 
-          <Col xl={10}>
+          <Col xl={10} className="mt-5 p-5">
             <Outlet />
           </Col>
         </Row>

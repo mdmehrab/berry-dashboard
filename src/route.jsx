@@ -1,6 +1,11 @@
 import Layout from "./Layout/Layout";
+import Analytics from "./components/Analytics/Analytics";
+import { Chart } from "./components/Chart/Chart";
+import Data from "./components/Data/Data";
+import Default from "./components/Default/Default";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
+import Statistics from "./components/Statistics/Statistics";
 import Dashboard from "./pages/Dashboard";
 
 export const routes = [
@@ -11,26 +16,23 @@ export const routes = [
     element: <Layout />,
     children: [
       { path: "", element: <Dashboard /> },
-      { path: "default", element: <div>hey</div> },
+      { path: "default", element: <Default /> },
       {
         path: "analytics",
-        element: <div>analytics</div>,
+        element: <Analytics />,
       },
       {
-        path: "a",
-        element: <div>aaaaaaaaaaaaaaaaa</div>,
+        path: "statistics",
+        element: <Statistics />,
+      },
+
+      {
+        path: "data",
+        element: <Data />,
       },
       {
-        path: "b",
-        element: <div>bbbbbbbbbbbbbbbbbbb</div>,
-      },
-      {
-        path: "c",
-        element: <div>cccccccccccccccccc</div>,
-      },
-      {
-        path: "d",
-        element: <div>ddddddddddddddddddd</div>,
+        path: "chart",
+        element: <Chart />,
       },
     ],
   },
