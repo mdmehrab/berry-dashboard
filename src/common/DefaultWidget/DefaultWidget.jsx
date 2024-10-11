@@ -9,19 +9,18 @@ const DefaultWidget = ({
   mainTitle,
   subTitle,
   middleIcon,
-  backgroundColor = "#39A9A5", // Default color if no prop is provided
+  backgroundColor = "#39A9A5",
 }) => {
   return (
     <>
       <Card
         style={{
-          background: backgroundColor, // Using backgroundColor prop
+          background: backgroundColor,
           height: "180px",
           margin: "0 .7rem",
         }}
       >
         <Card.Body>
-          {/* Placing the labels at the top-right */}
           <div className="d-flex justify-content-end">
             {primaryLabel && (
               <span style={{ color: "#FFD700", marginRight: "1rem" }}>
@@ -39,7 +38,7 @@ const DefaultWidget = ({
           </div>
 
           <div className="d-flex mt-3">
-            <Card.Title className="text-white display-6 mainTitle">
+            <Card.Title className="text-white mainTitle">
               {mainTitle}
             </Card.Title>
             <span className="mx-3 text-info">{middleIcon}</span>

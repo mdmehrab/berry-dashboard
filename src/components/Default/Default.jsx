@@ -23,7 +23,7 @@ const Default = () => {
                 <Col xl={6}>
                   <DefaultWidget
                     primaryIcon={<FaAd />}
-                    mainTitle={"$600.00"}
+                    mainTitle={"$961"}
                     subTitle={`Total Order`}
                     middleIcon={<FaAd />}
                     primaryLabel={"Month"}

@@ -5,7 +5,8 @@
   }
 
   .icon {
-    background-color: red;
+    cursor: pointer;
+    background-color: #31a09b;
     height: 2rem;
     width: 2rem;
     display: flex;
@@ -16,5 +17,6 @@
 
   .mainTitle {
     font-weight: 500;
+    font-size: 35px;
   }
 }
