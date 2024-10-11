@@ -1,0 +1,20 @@
+.card {
+  font-family: "Poppins", sans-serif;
+  .card-text {
+    color: rgb(159, 216, 214);
+  }
+
+  .icon {
+    background-color: red;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .mainTitle {
+    font-weight: 500;
+  }
+}

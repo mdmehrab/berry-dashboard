@@ -1,5 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap";
-import DefaultWidget from "../../common/DefaultWidget";
+import DefaultWidget from "../../common/DefaultWidget/DefaultWidget";
+import "./default.scss";
 
 const Default = () => {
   return (
