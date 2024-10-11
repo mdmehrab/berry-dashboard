@@ -1,35 +1,50 @@
 import { Card } from "react-bootstrap";
-import { FaAd } from "react-icons/fa";
 import "./defaultWidget.scss";
 
-const DefaultWidget = () => {
+const DefaultWidget = ({
+  primaryIcon,
+  secondaryIcon,
+  primaryLabel,
+  secondaryLabel,
+  mainTitle,
+  subTitle,
+  middleIcon,
+  backgroundColor = "#39A9A5", // Default color if no prop is provided
+}) => {
   return (
     <>
       <Card
         style={{
-          background: "#39A9A5",
+          background: backgroundColor, // Using backgroundColor prop
           height: "180px",
-          margin: "0 .5rem",
+          margin: "0 .7rem",
         }}
       >
         <Card.Body>
-          <div className="d-flex justify-content-between">
-            <div className="icon">
-              <FaAd className="text-white" />
-            </div>
-            <FaAd />
-            {/* <span>Month</span>
-            <span>year</span> */}
+          {/* Placing the labels at the top-right */}
+          <div className="d-flex justify-content-end">
+            {primaryLabel && (
+              <span style={{ color: "#FFD700", marginRight: "1rem" }}>
+                {primaryLabel}
+              </span>
+            )}
+            {secondaryLabel && (
+              <span style={{ color: "#FFF" }}>{secondaryLabel}</span>
+            )}
           </div>
+
+          <div className="d-flex justify-content-between">
+            <div className="icon">{primaryIcon}</div>
+            {secondaryIcon}
+          </div>
+
           <div className="d-flex mt-3">
             <Card.Title className="text-white display-6 mainTitle">
-              $500.00
+              {mainTitle}
             </Card.Title>
-            <span className="mx-3 text-info">
-              <FaAd />
-            </span>
+            <span className="mx-3 text-info">{middleIcon}</span>
           </div>
-          <Card.Text className="text-capitalize">Total Earning</Card.Text>
+          <Card.Text className="text-capitalize">{subTitle}</Card.Text>
         </Card.Body>
       </Card>
     </>

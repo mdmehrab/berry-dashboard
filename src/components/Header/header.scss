@@ -1,86 +1,89 @@
-.profile {
-  width: 1.7rem;
-  height: 1.7rem;
-  border-radius: 50%;
-}
-
-.header-colour {
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-}
-
-.search-input {
-  width: 27rem;
-  padding-left: 2rem;
-  font-size: 0.8rem;
-  padding-top: 1rem;
-  margin-left: 1em;
-  padding-bottom: 1rem;
-}
-
-.search-icon {
-  left: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #494444;
-}
-
-.adjustments-icon {
-  right: 23rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.adajest {
-  background-color: rgb(4, 230, 214);
-}
-.position-relative {
-  position: relative;
-}
-
-.icone-background {
-  background-color: rgb(232, 246, 245);
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    background-color: #39a9a5;
-    cursor: pointer;
-    color: #fff;
+header {
+  .profile {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
   }
-}
 
-.icone-background-one {
-  background-color: rgb(227, 232, 232);
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    cursor: pointer;
-    color: #fff;
-    background-color: #173e43;
+  .header-colour {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 9;
   }
-}
 
-.icone-background-two {
-  background-color: rgb(227, 232, 232);
-  width: 90px;
-  height: 50px;
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .search-input {
+    width: 27rem;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    margin-left: 1em;
+    padding-bottom: 1rem;
+  }
 
-  &:hover {
-    cursor: pointer;
-    color: #fff;
-    background-color: #173e43;
+  .search-icon {
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #494444;
+  }
+
+  .adjustments-icon {
+    right: 23rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .adajest {
+    background-color: rgb(4, 230, 214);
+  }
+  .position-relative {
+    position: relative;
+  }
+
+  .icone-background {
+    background-color: rgb(232, 246, 245);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #39a9a5;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .icone-background-one {
+    background-color: rgb(227, 232, 232);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background-color: #173e43;
+    }
+  }
+
+  .icone-background-two {
+    background-color: rgb(227, 232, 232);
+    width: 90px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background-color: #173e43;
+    }
   }
 }
