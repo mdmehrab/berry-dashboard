@@ -1,22 +1,27 @@
-.card {
-  font-family: "Poppins", sans-serif;
-  .card-text {
-    color: rgb(159, 216, 214);
-  }
+.card_background {
+  background-color: #39a9a5;
+}
 
-  .icon {
-    cursor: pointer;
-    background-color: #31a09b;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-  }
+.font_size {
+  font-size: 2rem;
+}
 
-  .mainTitle {
-    font-weight: 500;
-    font-size: 35px;
-  }
+.icone_colur {
+  color: #fff;
+  background-color: rgb(41, 151, 146);
+  border-radius: 5px;
+  padding: 0.6rem 0.7rem;
+}
+
+.another_icon {
+  background: rgb(159, 216, 214);
+  color: rgb(57, 169, 165);
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.earning {
+  color: rgb(159, 216, 214);
+  font-size: 1rem;
+  margin-top: 1.5rem;
 }

@@ -1,39 +1,46 @@
-import { Container, Col, Row } from "react-bootstrap";
 import DefaultWidget from "../../common/DefaultWidget/DefaultWidget";
-import "./default.scss";
-import { FaAd } from "react-icons/fa";
 
 const Default = () => {
   return (
     <>
-      <section id="default">
-        <Container>
+      <section>
+        <Container fluid>
           <Row>
             <Col xl={8}>
               <Row>
-                <Col xl={6}>
-                  <DefaultWidget
-                    primaryIcon={<FaAd />}
-                    secondaryIcon={<FaAd />}
-                    mainTitle={"$500.00"}
-                    subTitle={`Total Earning`}
-                    middleIcon={<FaAd />}
-                  />
-                </Col>
-                <Col xl={6}>
-                  <DefaultWidget
-                    primaryIcon={<FaAd />}
-                    mainTitle={"$961"}
-                    subTitle={`Total Order`}
-                    middleIcon={<FaAd />}
-                    primaryLabel={"Month"}
-                    secondaryLabel={"Year"}
-                    backgroundColor={"#14383D"}
-                  />
-                </Col>
+                <div>
+                  <Col xl={6}>
+                    <div>
+                      <div>
+                        <span>
+                          <AiFillAlert />
+                        </span>
+                        <span>
+                          <AiFillAlert />
+                        </span>
+                      </div>
+                      <div>
+                        <span></span>
+                        <span>
+                          <AiFillAlert />
+                        </span>
+                      </div>
+                      <div>
+                        <span></span>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={6}>
+                    <div></div>
+                  </Col>
+                </div>
               </Row>
             </Col>
-            <Col xl={4}>col 1</Col>
+
+            <Col xl={4}>
+              <div>3</div>
+            </Col>
           </Row>
         </Container>
       </section>

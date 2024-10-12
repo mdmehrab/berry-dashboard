@@ -1,51 +1,60 @@
-import { Card } from "react-bootstrap";
-import "./defaultWidget.scss";
-
-const DefaultWidget = ({
-  primaryIcon,
-  secondaryIcon,
-  primaryLabel,
-  secondaryLabel,
-  mainTitle,
-  subTitle,
-  middleIcon,
-  backgroundColor = "#39A9A5",
-}) => {
+import { Container, Row, Col } from "react-bootstrap";
+import { AiFillAlert } from "react-icons/ai";
+import "./DefaultWidget.scss";
+const DefaultWidget = () => {
   return (
     <>
-      <Card
-        style={{
-          background: backgroundColor,
-          height: "180px",
-          margin: "0 .7rem",
-        }}
-      >
-        <Card.Body>
-          <div className="d-flex justify-content-end">
-            {primaryLabel && (
-              <span style={{ color: "#FFD700", marginRight: "1rem" }}>
-                {primaryLabel}
-              </span>
-            )}
-            {secondaryLabel && (
-              <span style={{ color: "#FFF" }}>{secondaryLabel}</span>
-            )}
-          </div>
+      <section>
+        <Container fluid>
+          <Row>
+            <Col xl={8}>
+              <Row>
+                <div className="d-flex justify-content-between">
+                  <Col xl={6}>
+                    <div
+                      className=" rounded p-3 card_background"
+                      style={{ width: "330px", height: "180px" }}
+                    >
+                      <div className="d-flex justify-content-between p-3">
+                        <span className="icone_colur ">
+                          <AiFillAlert />
+                        </span>
+                        <span className="icone_colur">
+                          <AiFillAlert />
+                        </span>
+                      </div>
+                      <div className="d-flex align-items-center">
+                        <span className="fw-bold font_size  text-white">
+                          $500.00
+                        </span>
+                        <span className="mx-2 another_icon">
+                          <AiFillAlert />
+                        </span>
+                      </div>
+                      <div>
+                        <span className="earning ">Total Earning</span>
+                      </div>
+                    </div>
+                  </Col>
 
-          <div className="d-flex justify-content-between">
-            <div className="icon">{primaryIcon}</div>
-            {secondaryIcon}
-          </div>
+                  <Col xl={6}>
+                    <div
+                      className="bg-black text-white rounded"
+                      style={{ width: "330px", height: "180px" }}
+                    >
+                      2
+                    </div>
+                  </Col>
+                </div>
+              </Row>
+            </Col>
 
-          <div className="d-flex mt-3">
-            <Card.Title className="text-white mainTitle">
-              {mainTitle}
-            </Card.Title>
-            <span className="mx-3 text-info">{middleIcon}</span>
-          </div>
-          <Card.Text className="text-capitalize">{subTitle}</Card.Text>
-        </Card.Body>
-      </Card>
+            <Col xl={4}>
+              <div className="bg-info ">3</div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };
