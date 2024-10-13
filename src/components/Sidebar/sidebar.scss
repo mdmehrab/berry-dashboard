@@ -1,0 +1,52 @@
+#sidebar {
+  overflow: hidden;
+  margin-top: 5rem;
+  padding: 1rem 1rem;
+  background: #fff;
+
+  h5 {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .sidebar-section {
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-item,
+  .sidebar-subitem {
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 0.2rem 0;
+    &:hover {
+      border-radius: 5px;
+      background-color: rgb(227, 245, 243);
+    }
+  }
+
+  .nested-items {
+    margin-left: 1rem;
+  }
+
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 0;
+    font-weight: 500;
+  }
+
+  .row_line {
+    border-bottom: 1px solid #fffefe;
+  }
+
+  .space {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}

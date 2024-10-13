@@ -1,20 +1,24 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Sidebar from "../components/Sidebar/Sidebar";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Header />
+      <Container fluid className="h-full">
+        <Row>
+          <Col xl={2}>
+            <Sidebar />
+          </Col>
 
-      <div className="d-flex">
-        <Sidebar />
-
-        <div className="content-area p-5 bg-secondary" style={{ flex: 1 }}>
-          <Outlet />
-        </div>
-      </div>
-    </div>
+          <Col xl={10} className="mt-5 p-5">
+            <Outlet />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 
