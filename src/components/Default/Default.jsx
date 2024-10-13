@@ -5,6 +5,7 @@ import { FaAd } from "react-icons/fa";
 import IncomeWidjet from "../../common/IncomeWidget/IncomeWidjet";
 import { DiAndroid } from "react-icons/di";
 import { DiApple } from "react-icons/di";
+import StackedBarChart from "../Chart/Chart";
 
 const Default = () => {
   return (
@@ -35,6 +36,8 @@ const Default = () => {
                   />
                 </Col>
               </Row>
+
+              <StackedBarChart />
             </Col>
 
             <Col xl={4}>
