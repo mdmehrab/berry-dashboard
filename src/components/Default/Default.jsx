@@ -33,7 +33,7 @@ const Default = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xl={4}>col 1</Col>
+            <Col xl={4}>col 2</Col>
           </Row>
         </Container>
       </section>
