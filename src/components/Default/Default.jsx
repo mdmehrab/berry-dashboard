@@ -37,10 +37,7 @@ const Default = () => {
                 </div>
               </Row>
             </Col>
-
-            <Col xl={4}>
-              <div>3</div>
-            </Col>
+            <Col xl={4}>col 2</Col>
           </Row>
         </Container>
       </section>
