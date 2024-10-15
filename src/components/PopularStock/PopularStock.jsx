@@ -26,7 +26,7 @@ const PopularStocks = () => {
       },
       series: [
         {
-          data: [820, 932, 901, 934, 1290, 1330, 1320],
+          data: [0, 240, 200, 900, 500, 700, 400],
           type: "line",
           smooth: true,
           areaStyle: {
