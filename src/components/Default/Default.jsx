@@ -6,6 +6,7 @@ import IncomeWidjet from "../../common/IncomeWidget/IncomeWidjet";
 import { DiAndroid } from "react-icons/di";
 import { DiApple } from "react-icons/di";
 import StackedBarChart from "../Chart/Chart";
+import PopularStock from "../PopularStock/PopularStock";
 
 const Default = () => {
   return (
@@ -58,6 +59,10 @@ const Default = () => {
                   prize={"$210k"}
                   totalIncome={"Total income"}
                 />
+              </div>
+
+              <div>
+                <PopularStock />
               </div>
             </Col>
           </Row>
