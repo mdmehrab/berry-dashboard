@@ -38,7 +38,9 @@ const Default = () => {
                 </Col>
               </Row>
 
-              <StackedBarChart />
+              <div className="bg-danger">
+                <StackedBarChart />
+              </div>
             </Col>
 
             <Col xl={4}>

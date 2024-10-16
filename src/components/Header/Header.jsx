@@ -10,10 +10,10 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { TbAdjustmentsHorizontal } from "react-icons/tb";
-import { Row, Col, InputGroup } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "./header.scss";
 
-function Header() {
+const Header = ({ toggleSidebar }) => {
   return (
     <header>
       <Container fluid className="header-colour p-3">
@@ -24,9 +24,12 @@ function Header() {
                 <img src={logo} alt="" />
               </span>
 
-              <span className="icone-background ">
+              <button
+                className="icone-background border-0"
+                onClick={toggleSidebar}
+              >
                 <FaBars />
-              </span>
+              </button>
             </div>
           </Col>
           <Col className="position-relative  d-flex align-items-center" xl={7}>
@@ -74,6 +77,6 @@ function Header() {
       </Container>
     </header>
   );
-}
+};
 
 export default Header;
