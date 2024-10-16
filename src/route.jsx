@@ -1,6 +1,6 @@
 import Layout from "./Layout/Layout";
 import Analytics from "./components/Analytics/Analytics";
-import { Chart } from "./components/Chart/Chart";
+
 import Data from "./components/Data/Data";
 import Default from "./components/Default/Default";
 import Login from "./components/Login/Login";
@@ -30,10 +30,7 @@ export const routes = [
         path: "data",
         element: <Data />,
       },
-      {
-        path: "chart",
-        element: <Chart />,
-      },
+      ,
     ],
   },
 ];

@@ -1,12 +1,51 @@
 #sidebar {
-  overflow: hidden;
-  margin-top: 5rem;
-  padding: 1rem 1rem;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  overflow-y: auto;
   background: #fff;
+  height: 100vh;
+  width: 16rem; // Default expanded width
+  transition: width 0.3s ease;
+  padding: 1rem;
 
-  h5 {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
+  &.collapsed {
+    width: 4rem; // Width when collapsed
+
+    .sidebar-section h5,
+    .sidebar-item h6,
+    .sidebar-link span {
+      display: none; // Hide text labels
+    }
+
+    .sidebar-link {
+      justify-content: center;
+
+      svg {
+        margin-right: 0; // No margin for icons when collapsed
+        width: 12px; // Set icon width for collapsed state
+        height: 12px; // Set icon height for collapsed state
+      }
+    }
+  }
+
+  // Default size for icons when expanded
+  .sidebar-link svg {
+    width: 16px; // Set icon width for expanded state
+    height: 16px; // Set icon height for expanded state
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
   }
 
   .sidebar-section {
@@ -36,17 +75,4 @@
     padding: 0.5rem 0;
     font-weight: 500;
   }
-
-  .row_line {
-    border-bottom: 1px solid #fffefe;
-  }
-
-  .space {
-    margin-bottom: 0.8rem;
-  }
-}
-
-.row > * {
-  padding-right: 0;
-  padding-left: 0;
 }

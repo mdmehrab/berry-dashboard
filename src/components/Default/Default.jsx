@@ -5,11 +5,13 @@ import { FaAd } from "react-icons/fa";
 import IncomeWidjet from "../../common/IncomeWidget/IncomeWidjet";
 import { DiAndroid } from "react-icons/di";
 import { DiApple } from "react-icons/di";
+import StackedBarChart from "../Chart/Chart";
+import PopularStock from "../PopularStock/PopularStock";
 
 const Default = () => {
   return (
     <>
-      <section id="default">
+      <section id="default" className="p-5 mt-3">
         <Container>
           <Row>
             <Col xl={8}>
@@ -35,6 +37,10 @@ const Default = () => {
                   />
                 </Col>
               </Row>
+
+              <div>
+                <StackedBarChart />
+              </div>
             </Col>
 
             <Col xl={4}>
@@ -55,6 +61,10 @@ const Default = () => {
                   prize={"$210k"}
                   totalIncome={"Total income"}
                 />
+              </div>
+
+              <div>
+                <PopularStock />
               </div>
             </Col>
           </Row>
