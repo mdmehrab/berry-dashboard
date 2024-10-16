@@ -7,6 +7,7 @@
   height: 100vh;
   width: 16rem; // Default expanded width
   transition: width 0.3s ease;
+  padding: 1rem;
 
   &.collapsed {
     width: 4rem; // Width when collapsed
@@ -22,8 +23,16 @@
 
       svg {
         margin-right: 0; // No margin for icons when collapsed
+        width: 12px; // Set icon width for collapsed state
+        height: 12px; // Set icon height for collapsed state
       }
     }
+  }
+
+  // Default size for icons when expanded
+  .sidebar-link svg {
+    width: 16px; // Set icon width for expanded state
+    height: 16px; // Set icon height for expanded state
   }
 
   &::-webkit-scrollbar {
@@ -65,14 +74,5 @@
     color: inherit;
     padding: 0.5rem 0;
     font-weight: 500;
-  }
-
-  .sidebar-link svg {
-    font-size: 1rem; // Default size for icons when sidebar is expanded
-    transition: font-size 0.3s ease; // Add a transition for smooth size change
-  }
-
-  &.collapsed .sidebar-link svg {
-    font-size: 1.5rem; // Size for icons when sidebar is collapsed (adjust as needed)
   }
 }

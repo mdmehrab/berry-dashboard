@@ -11,7 +11,7 @@ import PopularStock from "../PopularStock/PopularStock";
 const Default = () => {
   return (
     <>
-      <section id="default">
+      <section id="default" className="p-5 mt-3">
         <Container>
           <Row>
             <Col xl={8}>
@@ -38,7 +38,7 @@ const Default = () => {
                 </Col>
               </Row>
 
-              <div className="bg-danger">
+              <div>
                 <StackedBarChart />
               </div>
             </Col>

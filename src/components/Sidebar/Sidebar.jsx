@@ -20,7 +20,10 @@ const Sidebar = ({ isCollapsed }) => {
           </h5>
 
           {ele.items?.map((item) => (
-            <div key={item.id} className="sidebar-item px-4">
+            <div
+              key={item.id}
+              className={`sidebar-item ${isCollapsed ? "" : "px-4"}`}
+            >
               {item.items ? (
                 <>
                   <h6
@@ -30,7 +33,9 @@ const Sidebar = ({ isCollapsed }) => {
                     {/* Always show the icon */}
                     {item.icon && (
                       <item.icon
-                        style={{ marginRight: isCollapsed ? "0" : "0.5rem" }}
+                        className={`sidebar-icon ${
+                          isCollapsed ? "collapsed" : "expanded"
+                        }`}
                       />
                     )}
                     {/* Show the content only when not collapsed */}
@@ -45,7 +50,11 @@ const Sidebar = ({ isCollapsed }) => {
                         >
                           <Link to={subItem.url}>
                             {subItem.icon && (
-                              <subItem.icon style={{ marginRight: "0.5rem" }} />
+                              <subItem.icon
+                                className={`sidebar-icon ${
+                                  isCollapsed ? "collapsed" : "expanded"
+                                }`}
+                              />
                             )}
                             {!isCollapsed && subItem.label}
                           </Link>
@@ -59,7 +68,9 @@ const Sidebar = ({ isCollapsed }) => {
                   {/* Always show the icon */}
                   {item.icon && (
                     <item.icon
-                      style={{ marginRight: isCollapsed ? "0" : "1rem" }}
+                      className={`sidebar-icon ${
+                        isCollapsed ? "collapsed" : "expanded"
+                      }`}
                     />
                   )}
                   {/* Show the label only when not collapsed */}

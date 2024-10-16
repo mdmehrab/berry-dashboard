@@ -19,7 +19,7 @@ const Layout = () => {
           <Col xl={isCollapsed ? 1 : 2} className="p-0">
             <Sidebar isCollapsed={isCollapsed} />
           </Col>
-          <Col xl={isCollapsed ? 11 : 10} className="mt-5 p-5">
+          <Col xl={isCollapsed ? 11 : 10} className="mt-5 ">
             <Outlet />
           </Col>
         </Row>
