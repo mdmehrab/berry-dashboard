@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
+import { TypeAnimation } from "react-type-animation";
 import "./popularStock.scss";
 
 const PopularStocks = () => {
@@ -83,7 +84,28 @@ const PopularStocks = () => {
             fontWeight: "600",
           }}
         >
-          Popular Stocks
+          Popular
+          <TypeAnimation
+            sequence={[
+              "Stocks",
+              1000,
+              "Fiber",
+              2000,
+              "",
+              () => {
+                console.log("Sequence completed");
+              },
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            className="mx-1"
+            style={{
+              fontSize: "15px",
+              display: "inline-block",
+              color: "#ff0000",
+            }}
+          />
         </h4>
         <div ref={chartRef} style={{ height: "100px", width: "100%" }}></div>
         <div className="stock-info d-flex justify-content-between align-items-center">
