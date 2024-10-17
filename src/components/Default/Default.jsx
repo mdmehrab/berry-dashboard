@@ -1,12 +1,14 @@
 import { Container, Col, Row } from "react-bootstrap";
-import DefaultWidget from "../../common/DefaultWidget/DefaultWidget";
-import "./default.scss";
+import {
+  DefaultWidget,
+  IncomeWidjet,
+  StackedBarChart,
+  PopularStock,
+} from "../index";
+
 import { FaAd } from "react-icons/fa";
-import IncomeWidjet from "../../common/IncomeWidget/IncomeWidjet";
-import { DiAndroid } from "react-icons/di";
-import { DiApple } from "react-icons/di";
-import StackedBarChart from "../Chart/Chart";
-import PopularStock from "../PopularStock/PopularStock";
+import { DiAndroid, DiApple } from "react-icons/di";
+import "./default.scss";
 
 const Default = () => {
   return (
