@@ -1,15 +1,14 @@
-import { Col, Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+
 import "./monthlyWidget.scss";
 
-export default function MonthlyWidget() {
+const MonthlyWidget = () => {
   return (
-    <>
-      <div>
-        <Row>
-          <Col xl={6}>Revenue</Col>
-          <Col xl={6}>Orders Received</Col>
-        </Row>
-      </div>
-    </>
+    <Row>
+      <Col xl="6">revenu</Col>
+      <Col xl="6">total oder</Col>
+    </Row>
   );
-}
+};
+
+export default MonthlyWidget;

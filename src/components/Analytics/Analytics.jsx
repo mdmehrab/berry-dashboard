@@ -1,18 +1,28 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MarketShare, MonthlyWidget } from "../index";
+import {
+  Accounts,
+  LatestCustomers,
+  MarketShare,
+  MonthlyWidget,
+  OverViewCards,
+  TotalRevenue,
+} from "..";
 
 function Analytics() {
   return (
     <>
-      <section id="analytics">
+      <section className="p-5" id="analytics">
         <Container>
           <Row>
-            <Col xl={8} className="p-5">
+            <Col xl="8">
               <MarketShare />
               <MonthlyWidget />
+              <LatestCustomers />
             </Col>
-            <Col xl={4} className="p-5 bg-danger">
-              right
+            <Col xl="4">
+              <Accounts />
+              <TotalRevenue />
+              <OverViewCards />
             </Col>
           </Row>
         </Container>

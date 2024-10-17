@@ -1,5 +1,7 @@
 import "./marketShare.scss";
 
-export default function MarketShare() {
+const MarketShare = () => {
   return <div>MarketShare</div>;
-}
+};
+
+export default MarketShare;

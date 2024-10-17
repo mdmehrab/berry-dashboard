@@ -4,3 +4,7 @@ export { default as StackedBarChart } from "./Chart/Chart";
 export { default as PopularStock } from "./PopularStock/PopularStock";
 export { default as MarketShare } from "./MarketShare/MarketShare";
 export { default as MonthlyWidget } from "./MonthlyWidget/MonthlyWidget";
+export { default as LatestCustomers } from "./LatestCustomers/LatestCustomers";
+export { default as Accounts } from "./Accounts/Accounts";
+export { default as TotalRevenue } from "./TotalRevenue/TotalRevenue";
+export { default as OverViewCards } from "./OverviewCards/OverViewCards";
